@@ -2,7 +2,8 @@
 
 This project is a fully working simulator of the logic of multi-tape turing machines. Write, simulate, and share custom Turing Machines that can fulfill any demand of algorithms.
 
-**[Live Demo](https://b-tm-simulator.netlify.app)** **[Backend API](https://turing-machine-simulator.onrender.com/docs)**
+**[Live Demo](https://b-tm-simulator.netlify.app)** 
+**[Backend API](https://turing-machine-simulator.onrender.com/docs)**
 
 
 ## Key Features
