@@ -93,10 +93,12 @@ return (
       Line 2: Input Alphabet (Σ) ex: a,b
       Line 3: State Names ex: q0,q1,accept,reject
       Line 4: Start State Name
-      Line 5: AcceptState,RejectState
+      Line 5: AcceptStateName,RejectStateName
       Line 6+: Tape Alphabets (Γ) - one line per tape
       Following Lines: Transitions
-      Format: OldState,[In1,In2...],NewState,[Out1,Out2...],[Dir1,Dir2...]
+      Transition Rule Format: OldState,Input1,Input2,...,NewState,Output1,Output2,...,Direction1,Direction2,...
+
+      Directions can be L for left, R for right, or S for stay
 
       Example (1-Tape):
       TM-EVEN-LENGTH,1,100,1000
@@ -213,6 +215,12 @@ return (
         </div>
 
         <div className="library-grid">
+        {library.length === 0 && (
+          <div className="warning-text">
+            <p>Fetching machines...</p>
+        <small>If this is taking a while, the Render free tier is likely waking up the backend after inactivity. Please wait up to 1 minute. In the meantime, try creating your own machine!</small>
+        </div>
+        )}
           {library.map((m) => (
             <div key={m.id} className="library-card" onClick={() => {
               setMachineCode(m.machineCode);
