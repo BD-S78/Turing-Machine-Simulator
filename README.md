@@ -66,6 +66,6 @@ Frontend: http://localhost:5173
 Backend API Documentation: http://localhost:8000/docs
 
 
-##Author
+## Author
 
 Bryan Dong [Github](https://github.com/BD-S78)
