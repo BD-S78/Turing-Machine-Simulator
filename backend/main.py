@@ -7,6 +7,14 @@ from datetime import datetime, timezone
 import os
 app = FastAPI()
 
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "https://cute-duckanoo-6db2e1.netlify.app"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 MONGODB_URL = os.getenv("MONGODB_URL")
 
 
@@ -15,13 +23,6 @@ db = client.turing_machine_db
 machines_collection = db.machines
 
 
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://cute-duckanoo-6db2e1.netlify.app"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 
 class SimulationInput(BaseModel):
