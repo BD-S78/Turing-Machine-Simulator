@@ -18,7 +18,7 @@ machines_collection = db.machines
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://idkwhat.com"],
+    allow_origins=["http://localhost:5173", "https://turing-machine-simulator.onrender.com/"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
