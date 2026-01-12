@@ -218,7 +218,7 @@ return (
         {library.length === 0 && (
           <div className="warning-text">
             <p>Fetching machines...</p>
-        <small>If this is taking a while, the Render free tier is likely waking up the backend after inactivity. Please wait up to 1 minute. In the meantime, try creating your own machine!</small>
+        <small>{"If this is taking a while, the Render free tier is likely waking up the backend after inactivity. Please wait up to 1 minute. In the meantime, try creating your own machine! (If being run locally, you haven't saved any machines to your database)"}</small>
         </div>
         )}
           {library.map((m) => (
