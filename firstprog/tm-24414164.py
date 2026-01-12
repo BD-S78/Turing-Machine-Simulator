@@ -3,7 +3,7 @@ import csv #output does not work properly in csv across colomns when double clic
 #if you don't care about the csv req in the rubric this doesn't matter it shows up in console and .txt perfectly
 import sys
 
-#written using python 3.13 
+#written using python 3.13
 #execute via console/terminal with command python tm-24414164.py tm1.txt tm1-tape.txt
 
 
