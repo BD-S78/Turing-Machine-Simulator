@@ -70,3 +70,7 @@ Backend API Documentation: http://localhost:8000/docs
 ## Author
 
 Bryan Dong [Github](https://github.com/BD-S78)
+
+## ⚖️ License
+
+This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE) file for details.
